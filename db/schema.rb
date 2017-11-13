@@ -10,47 +10,70 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171113190352) do
+ActiveRecord::Schema.define(version: 20171113192540) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "card_answers", force: :cascade do |t|
-    t.text "body"
-  end
-
-  create_table "card_templates", force: :cascade do |t|
+  create_table "game_card_traits", force: :cascade do |t|
+    t.text "hint"
     t.text "default_body"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
-  create_table "card_trait_templates", force: :cascade do |t|
+  create_table "game_cards", force: :cascade do |t|
+    t.text "hint"
     t.text "default_body"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
-  create_table "game_templates", force: :cascade do |t|
+  create_table "games", force: :cascade do |t|
     t.string "title"
     t.text "prompt"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "noun_templates", force: :cascade do |t|
-    t.string "flavor"
+    t.text "flavor"
+    t.text "tooltip"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "play_card_answers", force: :cascade do |t|
+    t.text "body"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "play_trait_answers", force: :cascade do |t|
+    t.text "body"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "plays", force: :cascade do |t|
-  end
-
-  create_table "trait_answers", force: :cascade do |t|
-    t.text "body"
+    t.text "response"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "trait_templates", force: :cascade do |t|
-    t.string "flavor"
+    t.text "flavor"
+    t.text "tooltip"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "users", force: :cascade do |t|
     t.string "username"
     t.string "password_digest"
     t.string "subscription"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end
