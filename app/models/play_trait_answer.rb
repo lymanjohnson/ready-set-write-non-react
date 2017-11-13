@@ -1,0 +1,2 @@
+class PlayTraitAnswer < ApplicationRecord
+end

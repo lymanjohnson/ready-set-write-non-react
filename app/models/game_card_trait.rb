@@ -1,0 +1,2 @@
+class GameCardTrait < ApplicationRecord
+end

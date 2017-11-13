@@ -1,0 +1,2 @@
+class PlayCardAnswer < ApplicationRecord
+end

@@ -1,0 +1,2 @@
+class TraitTemplate < ApplicationRecord
+end
