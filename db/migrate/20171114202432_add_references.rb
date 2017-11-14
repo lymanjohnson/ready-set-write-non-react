@@ -5,8 +5,8 @@ class AddReferences < ActiveRecord::Migration[5.1]
 
     add_reference :play_card_answers, :play, foreign_key: true
 
-    add_reference :relationships, :play_card_answer, foreign_key: true
-    add_reference :relationships, :other_card, foreign_key: true
+    add_reference :relationships, :play_card_answer, :class_name => "PlayCardAnswer"
+    add_reference :relationships, :other_card, :class_name => "PlayCardAnswer"
 
     add_reference :play_trait_answers, :play_card_answer, foreign_key: true
 
