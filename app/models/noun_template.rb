@@ -1,2 +1,0 @@
-class NounTemplate < ApplicationRecord
-end
