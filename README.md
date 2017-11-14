@@ -15,7 +15,7 @@ It's not a how-to or a style class, but rather a simple, active way to encourage
 
 Each session starts out with a prompt. It will usually be a sentence or short paragraph, but may also include pictures or sounds. Examples might include:
 
-"The thing is good at is very, very bad."
+"The thing he is good at is very, very bad."
 
 "Use all of the following words in a piece of writing: bit, draw, flex, perilous, bubble, corner, rancid, pound, high, open."
 
