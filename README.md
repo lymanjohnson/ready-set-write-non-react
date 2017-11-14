@@ -11,7 +11,7 @@ It's not a how-to or a style class, but rather a simple, active way to encourage
 ## How It Works
 
 
-### Stage 0.
+### Stage 0 - The Prompt
 
 Each session starts out with a prompt. It will usually be a sentence or short paragraph, but may also include pictures or sounds. Examples might include:
 
