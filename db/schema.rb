@@ -55,13 +55,6 @@ ActiveRecord::Schema.define(version: 20171114202432) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "noun_templates", force: :cascade do |t|
-    t.text "flavor"
-    t.text "tooltip"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "play_card_answers", force: :cascade do |t|
     t.text "body"
     t.datetime "created_at", null: false
@@ -92,10 +85,10 @@ ActiveRecord::Schema.define(version: 20171114202432) do
     t.text "body"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.bigint "card_1_id"
-    t.bigint "card_2_id"
-    t.index ["card_1_id"], name: "index_relationships_on_card_1_id"
-    t.index ["card_2_id"], name: "index_relationships_on_card_2_id"
+    t.bigint "play_card_answer_id"
+    t.bigint "other_card_id"
+    t.index ["other_card_id"], name: "index_relationships_on_other_card_id"
+    t.index ["play_card_answer_id"], name: "index_relationships_on_play_card_answer_id"
   end
 
   create_table "trait_templates", force: :cascade do |t|
